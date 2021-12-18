@@ -1,7 +1,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.googlecode.page-component</groupId>
+    <groupId>com.braimanm</groupId>
     <artifactId>page-component</artifactId>
     <version>1.6.1</version>
     <packaging>jar</packaging>
@@ -27,7 +27,14 @@
         </developerConnection>
         <url>https://code.google.com/p/page-component/</url>
     </scm>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <testng.version>7.4.0</testng.version>
+        <cglib.version>3.3.0</cglib.version>
+        <appium.version>7.6.0</appium.version>
+        <datainstiller.version>2.1.1</datainstiller.version>
+        <assertj.version>3.21.0</assertj.version>
+    </properties>
 
     <build>
         <plugins>
@@ -86,27 +93,27 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>${testng.version}</version>
         </dependency>
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib-nodep</artifactId>
-            <version>3.3.0</version>
+            <version>${cglib.version}</version>
         </dependency>
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>7.6.0</version>
+            <version>${appium.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.googlecode.datainstiller</groupId>
+            <groupId>com.braimanm</groupId>
             <artifactId>datainstiller</artifactId>
-            <version>2.1.1</version>
+            <version>${datainstiller.version}</version>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.21.0</version>
+            <version>${assertj.version}</version>
         </dependency>
     </dependencies>
 
