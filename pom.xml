@@ -55,8 +55,9 @@
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>nexus-releases</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>false</autoReleaseAfterClose>
+<!--                    <skipStagingRepositoryClose>true</skipStagingRepositoryClose>-->
                 </configuration>
             </plugin>
         </plugins>
